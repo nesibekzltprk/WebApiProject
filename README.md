@@ -41,7 +41,7 @@ Bu proje, ASP.NET Core Web API ile geliştirilmiş bir kullanıcı yönetim sist
 # 🧾 Kullanım
 
 1. `appsettings.json` dosyasına bağlantı cümlesini ve JWT ayarlarını ekleyin:
-```json
+json
 "ConnectionStrings": {
   "DefaultConnection": "Server=.;Database=YourDbName;Trusted_Connection=True;"
 },

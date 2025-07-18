@@ -50,11 +50,11 @@ Bu proje, ASP.NET Core Web API ile geliştirilmiş bir kullanıcı yönetim sist
   "Issuer": "your_issuer",
   "Audience": "your_audience"
 }
-2.SQL Server'da aşağıdaki şemaya uygun bir tablo oluşturun:
+SQL Server'da aşağıdaki şemaya uygun bir tablo oluşturun:
 CREATE TABLE [User] (
     Id INT PRIMARY KEY IDENTITY,
     Name NVARCHAR(100),
     Email NVARCHAR(100),
     Password NVARCHAR(100)
 );
-3.Uygulamayı başlatın ve Postman veya Swagger ile endpoint'leri test edin.
+Uygulamayı başlatın ve Postman veya Swagger ile endpoint'leri test edin.

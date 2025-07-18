@@ -38,23 +38,31 @@ Bu proje, ASP.NET Core Web API ile geliştirilmiş bir kullanıcı yönetim sist
 - `DELETE /api/User/DeleteUser/{id}`  
   Belirtilen ID’ye sahip kullanıcıyı siler  
 
-# 🧾 Kullanım
+## 🧾 Kullanım
 
 1. `appsettings.json` dosyasına bağlantı cümlesini ve JWT ayarlarını ekleyin:
-json
-"ConnectionStrings": {
-  "DefaultConnection": "Server=.;Database=YourDbName;Trusted_Connection=True;"
-},
-"Jwt": {
-  "Key": "your_secret_key_here",
-  "Issuer": "your_issuer",
-  "Audience": "your_audience"
-}
-SQL Server'da aşağıdaki şemaya uygun bir tablo oluşturun:
-CREATE TABLE [User] (
-    Id INT PRIMARY KEY IDENTITY,
-    Name NVARCHAR(100),
-    Email NVARCHAR(100),
-    Password NVARCHAR(100)
-);
-Uygulamayı başlatın ve Postman veya Swagger ile endpoint'leri test edin.
+
+   ```json
+   "ConnectionStrings": {
+     "DefaultConnection": "Server=.;Database=YourDbName;Trusted_Connection=True;"
+   },
+   "Jwt": {
+     "Key": "your_secret_key_here",
+     "Issuer": "your_issuer",
+     "Audience": "your_audience"
+   }
+   
+2. SQL Server'da aşağıdaki şemaya uygun bir tablo oluşturun:
+
+    ```sql
+    CREATE TABLE [User] (
+        Id INT PRIMARY KEY IDENTITY,
+        Name NVARCHAR(100),
+        Email NVARCHAR(100),
+        Password NVARCHAR(100)
+    );
+    ```
+
+3. Uygulamayı başlatın ve Postman veya Swagger ile endpoint'leri test edin.
+
+
